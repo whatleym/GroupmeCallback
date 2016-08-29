@@ -11,7 +11,7 @@ public class CallbackController{
 	public Callback callback(@RequestParam(value="response") Response response, @RequestParam(value="meta") Meta meta){
 		Callback newCallback = new Callback(response, meta);
 
-		System.out.println(newCallback.toString());
+		System.out.println("\n\nThis is the text: " + newCallback.toString() + "\n\n");
 
 		return newCallback;
 	}
