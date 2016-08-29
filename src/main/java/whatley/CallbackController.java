@@ -2,18 +2,22 @@ package whatley;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class CallbackController{
 
-	@RequestMapping("/callback")
-	public Callback callback(@RequestParam(value="response") Response response, @RequestParam(value="meta") Meta meta){
-		Callback newCallback = new Callback(response, meta);
+	@RequestMapping(value = "/callback")
+	public void callback(@RequestParam(value="text") String text){
 
-		System.out.println("\n\nThis is the text: " + newCallback.toString() + "\n\n");
+		//Callback newCallback = new Callback(response, meta);
 
-		return newCallback;
+		//System.out.println("\n\nThis is the text: " + newCallback.toString() + "\n\n");
+
+		System.out.println(text);
+
+		//return newCallback;
 	}
 
 }
