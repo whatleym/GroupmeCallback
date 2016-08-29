@@ -17,4 +17,9 @@ public class Callback{
 	public Meta meta(){
 		return meta;
 	}
+
+	public String toString(){
+		return response.getText();
+	}
+
 }

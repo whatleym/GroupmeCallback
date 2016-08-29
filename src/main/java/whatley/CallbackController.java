@@ -9,7 +9,11 @@ public class CallbackController{
 
 	@RequestMapping("/callback")
 	public Callback callback(@RequestParam(value="response") Response response, @RequestParam(value="meta") Meta meta){
-		return new Callback(response, meta);
+		Callback newCallback = new Callback(response, meta);
+
+		System.out.println(newCallback.toString());
+
+		return newCallback;
 	}
 
 }
