@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CallbackController{
 
-	@RequestMapping(value = "/callback", method = @RequestMethod.POST)
+	@RequestMapping(value = "/callback", method = RequestMethod.POST)
 	public void callback(@RequestBody String text){
 
 		//Callback newCallback = new Callback(response, meta);
