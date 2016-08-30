@@ -8,8 +8,7 @@ public class CallbackController{
 
 	@RequestMapping(value = "/callback", method = RequestMethod.POST)
 	public void callback(@RequestBody String text){
-		System.out.println("\n");
-		System.out.println(text + "\n");
+		System.out.println(text);
 	}
 
 }
