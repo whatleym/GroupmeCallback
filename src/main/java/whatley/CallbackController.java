@@ -10,10 +10,12 @@ public class CallbackController{
 
 	@RequestMapping(value = "/callback", method = RequestMethod.POST)
 	public void callback(@RequestBody String text){
-		System.out.println(text);
+		//System.out.println(text);
 		//Maybe parse the JSON here
 		//check to see if correct person is playing
 		//call method in tic tac toe
+
+		Application.printThis(text);
 	}
 
 }
