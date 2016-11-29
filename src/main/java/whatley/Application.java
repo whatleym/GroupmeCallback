@@ -8,10 +8,11 @@ import java.util.LinkedList;
 @SpringBootApplication
 public class Application{
 
-		public static Queue<String> queue = new LinkedList<String>();
+		public static Queue<String> queue;
 		public static MessageSender messageSender = new MessageSender();
 		
 		public static void main(String[] args){
+			queue = new LinkedList<String>();
 			SpringApplication.run(Application.class, args);
 			Board board = new Board();
 			String messageString = "";
