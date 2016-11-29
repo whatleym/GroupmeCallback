@@ -74,9 +74,12 @@ public class Application{
 		}
 
 		public static String fetchMove(){
+			System.out.println("Entered fetchMove()");
 			while(queue.isEmpty()){
+				System.out.println("Looping");
 				//loop and block until get something
 			}
+			System.out.println("Returning");
 			return queue.remove();
 
 		}
