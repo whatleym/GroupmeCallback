@@ -17,6 +17,7 @@ public class CallbackController{
 
 		//Application.printThis(text);
 		Application.pushUnparsed(text);
+		Application.printQueue();
 	}
 
 }

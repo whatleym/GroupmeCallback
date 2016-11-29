@@ -18,7 +18,7 @@ public class Application{
 			System.out.println("The String is " + string);
 		}
 
-		public static void pushUnparsed(text){
+		public static void pushUnparsed(String text){
 			queue.add(text);
 		}
 
