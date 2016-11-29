@@ -62,13 +62,13 @@ public class Application{
 			
 		}
 
-		public static String fetchMove(){
-			while(queue.isEmpty()){
+//		public static String fetchMove(){
+//			while(queue.isEmpty()){
 				//loop and block until get something
-			}
+//			}
 			
 
-		}
+//		}
 
 		public static void printQueue(){
 
