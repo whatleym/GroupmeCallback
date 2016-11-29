@@ -26,7 +26,7 @@ public class Application{
 
 			if(queue.size() > 5){
 				while(!queue.isEmpty()){
-					System.out.println(queue.remove);
+					System.out.println(queue.remove());
 				}	
 			}
 
