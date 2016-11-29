@@ -35,7 +35,9 @@ public class Application{
 
 					messageString = "";
 					column = Integer.parseInt(fetchMove());
+					System.out.println("Column is " + column);
 					row = Integer.parseInt(fetchMove());
+					System.out.println("Row is " + row);
 				}while(!board.validateInput(row, column));
 				board.setTile(row, column, letter);
 			
