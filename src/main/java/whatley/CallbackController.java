@@ -15,7 +15,8 @@ public class CallbackController{
 		//check to see if correct person is playing
 		//call method in tic tac toe
 
-		Application.printThis(text);
+		//Application.printThis(text);
+		Application.pushUnparsed(text);
 	}
 
 }
