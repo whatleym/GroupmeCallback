@@ -48,12 +48,12 @@ public class Application{
 
 		public static void pushUnparsed(String text){
 			text = text.toLowerCase();
-			if(text.contains("sender_type\":\"bot"){
+			if(text.contains("sender_type\":\"bot")){
 				return;
 			}
-			if(text.contains("text\":\"tttbot"){
+			if(text.contains("text\":\"tttbot")){
 				text = text.substring(text.indexOf("tttbot") + 9);
-				text = text.substring(0, text.indexOf("\"");
+				text = text.substring(0, text.indexOf("\""));
 				System.out.println("THIS IS THE RESULTING TEXT: " + text);	
 
 			}else{
