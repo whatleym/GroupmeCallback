@@ -52,10 +52,16 @@ public class Application{
 				return;
 			}
 			if(text.contains("text\":\"tttbot")){
-				text = text.substring(text.indexOf("tttbot") + 9);
+				text = text.substring(text.indexOf("tttbot") + 7);
 				text = text.substring(0, text.indexOf("\""));
 				System.out.println("THIS IS THE RESULTING TEXT: " + text);	
+				String[] splitText = text.split("\\s+");
+				queue.add(splitText[0]);
+				queue.add(splitText[0]);
 
+				System.out.println("This is the first string: " + queue.remove());
+				System.out.println("This is the second string: " + queue.remove());		
+	
 			}else{
 
 			}
