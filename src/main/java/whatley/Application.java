@@ -57,7 +57,7 @@ public class Application{
 				System.out.println("THIS IS THE RESULTING TEXT: " + text);	
 				String[] splitText = text.split("\\s+");
 				queue.add(splitText[0]);
-				queue.add(splitText[0]);
+				queue.add(splitText[1]);
 
 				System.out.println("This is the first string: " + queue.remove());
 				System.out.println("This is the second string: " + queue.remove());		
